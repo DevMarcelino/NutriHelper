@@ -11,18 +11,18 @@ class Symptoms {
 List<Symptoms> symptoms = [
   Symptoms(
     image: 'assets/doctor-appoinment/temperature.png',
-    label: 'Temperature',
+    label: 'Perder Peso',
   ),
   Symptoms(
     image: 'assets/doctor-appoinment/snuffle.png',
-    label: 'Snuffle',
+    label: 'Ganhar Peso',
   ),
   Symptoms(
     image: 'assets/doctor-appoinment/headache.png',
-    label: 'Headache',
+    label: 'Melhorar Alimentação',
   ),
   Symptoms(
     image: 'assets/doctor-appoinment/dizzy.png',
-    label: 'Dizzy',
+    label: 'Manter Peso',
   ),
 ];

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/main_page.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/main_page.dart';
 
 void main() {
   runApp(const MyApp());

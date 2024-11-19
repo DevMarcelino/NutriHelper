@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/schedule.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/schedule.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
 import 'package:intl/intl.dart';
 
 class ScheduleItems extends StatelessWidget {
@@ -143,7 +143,7 @@ class ScheduleItems extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    "Cancel",
+                    "Cancelar",
                     style: TextStyle(
                       color: black,
                       fontSize: 16,
@@ -161,8 +161,8 @@ class ScheduleItems extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    "Reschedule",
-                    style: const TextStyle(
+                    "Concluir",
+                    style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

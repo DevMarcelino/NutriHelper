@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/doctor.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/symptom.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/Widgets/list_of_doctor.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/doctor_detail_screen.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/doctor.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/symptom.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/Widgets/list_of_doctor.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/doctor_detail_screen.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
 
 class DoctorAppoinmentHomeScreen extends StatefulWidget {
   const DoctorAppoinmentHomeScreen({super.key});
@@ -28,7 +28,7 @@ class _DoctorAppoinmentHomeScreenState
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
-              "What are your symptoms?",
+              "Qual seu Foco?",
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -84,7 +84,7 @@ class _DoctorAppoinmentHomeScreenState
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
-              "Popular doctors",
+              "Dietas Populares",
               style: TextStyle(
                 fontSize: 22,
                 color: black,
@@ -98,8 +98,8 @@ class _DoctorAppoinmentHomeScreenState
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.all(15),
               child: Wrap(
-                runSpacing: 14,
-                spacing: 16,
+                runSpacing: 10,
+                spacing: 10,
                 children: [
                   ...List.generate(
                     doctors.length,
@@ -156,12 +156,12 @@ class _DoctorAppoinmentHomeScreenState
                     size: 60,
                     color: Colors.white,
                   ),
-                  SizedBox(height: 40),
+                  SizedBox(height: 80),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Clinic visit",
+                        "Dieta Nova",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -170,9 +170,9 @@ class _DoctorAppoinmentHomeScreenState
                         ),
                       ),
                       Text(
-                        "Make an appoinment",
+                        "Crie uma Nova Dieta",
                         style: TextStyle(
-                          color: Colors.white38,
+                          color: Color.fromARGB(228, 255, 255, 255),
                           fontWeight: FontWeight.w600,
                           letterSpacing: 0,
                         ),
@@ -216,7 +216,7 @@ class _DoctorAppoinmentHomeScreenState
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Home visit",
+                        "Procure Dietas Populares",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
@@ -225,7 +225,7 @@ class _DoctorAppoinmentHomeScreenState
                         ),
                       ),
                       Text(
-                        "Call the doctor home",
+                        "Encontre a Dieta ideal para voce",
                         style: TextStyle(
                           color: Colors.black38,
                           fontWeight: FontWeight.w600,
@@ -252,7 +252,7 @@ class _DoctorAppoinmentHomeScreenState
           Row(
             children: [
               const Text(
-                "Elsie Adkins",
+                "Bem Vindo",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -267,12 +267,7 @@ class _DoctorAppoinmentHomeScreenState
               ),
             ],
           ),
-          const CircleAvatar(
-            radius: 27,
-            backgroundImage: NetworkImage(
-              "https://img.freepik.com/free-photo/portrait-3d-female-doctor_23-2151107332.jpg",
-            ),
-          ),
+
         ],
       ),
     );

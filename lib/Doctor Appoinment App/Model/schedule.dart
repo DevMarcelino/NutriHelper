@@ -16,27 +16,27 @@ class Schedule {
 List<Schedule> schedules = [
   Schedule(
       doctor: doctors[4],
-      status: 'Confirmed',
+      status: 'Confirmada',
       time: DateTime.parse('2024-11-03')),
   Schedule(
       doctor: doctors[0],
-      status: 'Confirmed',
+      status: 'Confirmada',
       time: DateTime.parse('2024-11-04')),
   Schedule(
       doctor: doctors[1],
-      status: 'Confirmed',
+      status: 'Confirmada',
       time: DateTime.parse('2024-11-05 09:30')),
   Schedule(
       doctor: doctors[2],
-      status: 'Confirmed',
+      status: 'Confirmada',
       time: DateTime.parse('2024-11-01 06:00')),
   Schedule(
     doctor: doctors[3],
-    status: 'Confirmed',
+    status: 'Confirmada',
     time: DateTime.parse('2024-11-06 15:45'),
   ),
 ];
-List<String> tabs = ['Upcoming', 'Completed', 'Canceled'];
+List<String> tabs = ['Atuais', 'Completas', 'Canceladas'];
 List<Schedule> nearest = schedules
     .where(
       (element) =>

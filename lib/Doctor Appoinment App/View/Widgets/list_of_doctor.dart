@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/doctor.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/doctor.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
 
 class ListOfDoctor extends StatelessWidget {
   final Doctor doctor;

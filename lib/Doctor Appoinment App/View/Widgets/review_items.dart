@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/review.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/review.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
 
 class ReviewItems extends StatelessWidget {
   final Review review;

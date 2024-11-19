@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/schedule.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/Widgets/schedule_items.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/schedule.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/Widgets/schedule_items.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
+
 
 class ScheduleScreen extends StatelessWidget {
   const ScheduleScreen({super.key});
@@ -15,7 +16,7 @@ class ScheduleScreen extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
-              "Schedule",
+              "Dietas Atuais",
               style: TextStyle(
                 fontSize: 28,
                 color: Colors.black,
@@ -75,7 +76,7 @@ class ScheduleScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
-                                "Nearest visit",
+                                "Refeição Mais Proxima",
                                 style: TextStyle(
                                   color: black,
                                   fontSize: 18,
@@ -93,7 +94,7 @@ class ScheduleScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               const Text(
-                                "Future visit",
+                                "Futuras Refeições",
                                 style: TextStyle(
                                   color: black,
                                   fontSize: 18,
@@ -114,7 +115,7 @@ class ScheduleScreen extends StatelessWidget {
                         ),
                         const Center(
                           child: Text(
-                            "Completed",
+                            "Completas",
                             style: TextStyle(
                               fontSize: 24,
                               color: purple,
@@ -123,7 +124,7 @@ class ScheduleScreen extends StatelessWidget {
                         ),
                          const Center(
                           child: Text(
-                            "Cnceled",
+                            "Concluidas",
                             style: TextStyle(
                               fontSize: 24,
                               color: purple,

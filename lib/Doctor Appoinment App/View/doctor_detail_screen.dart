@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/Model/doctor.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/Widgets/review_items.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/const.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/Model/doctor.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/Widgets/review_items.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/const.dart';
 
 class DoctorDetailScreen extends StatelessWidget {
   final Doctor doctor;
@@ -52,7 +52,7 @@ class DoctorDetailScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 18),
                 Text(
-                  "Dr. ${doctor.name}",
+                  "Dr.2 ${doctor.name}",
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

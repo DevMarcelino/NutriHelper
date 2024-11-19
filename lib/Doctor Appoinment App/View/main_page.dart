@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/home_screen.dart';
-import 'package:flutter_ui_design/Doctor%20Appoinment%20App/View/schedule_screen.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/home_screen.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/schedule_screen.dart';
+import 'package:nutrihelper/Doctor%20Appoinment%20App/View/search.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MainPage extends StatefulWidget {
@@ -13,11 +14,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int selectedIndex = 0;
   final List pages = [
-  const DoctorAppoinmentHomeScreen(),
+    const DoctorAppoinmentHomeScreen(),
+    const search(),
     const Scaffold(),
-    const ScheduleScreen(),
-    const Scaffold(),
-  ];
+    const ScheduleScreen(),  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class _MainPageState extends State<MainPage> {
         elevation: 0,
         backgroundColor: Colors.white,
         unselectedItemColor: Colors.black26,
-        selectedItemColor: Colors.deepPurple,
+        selectedItemColor: const Color(0xFF52CA1A),
         type: BottomNavigationBarType.fixed,
         currentIndex: selectedIndex,
         onTap: (value) {
@@ -40,16 +40,20 @@ class _MainPageState extends State<MainPage> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Iconsax.message),
-            label: "Messages",
+            icon: Icon(Iconsax.search_normal),
+            label: "Pesquisa",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Iconsax.calendar),
-            label: "Schedule",
+            icon: Icon(Iconsax.scan),
+            label: "Scan",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Iconsax.bookmark),
+            label: "Biblioteca",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: "Setting",
+            label: "Configurações",
           ),
         ],
       ),
